@@ -1,0 +1,14 @@
+.dropdown select {
+    width: 200px;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    text-align: center;
+    background-color: #00bc774b;
+    border-radius: 2px;
+    padding: 0.15em;
+    font-weight: 500;
+  }
+  
+  .dropdown select option {
+    background-color: white;
+  }
