@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css'
+import PropTypes from "prop-types";
 
 const Dropdown = ({ label, options, id, handleFormChange }) => {
     return (
@@ -17,3 +18,10 @@ const Dropdown = ({ label, options, id, handleFormChange }) => {
   };
   
   export default Dropdown;
+
+  Dropdown.protoTypes = {
+    label : PropTypes.string.isRequired,
+    options : PropTypes.arrayOf(PropTypes.object).isRequired,
+    id : PropTypes.string.isRequired,
+    handleFormChange : PropTypes.func.isRequired
+}
